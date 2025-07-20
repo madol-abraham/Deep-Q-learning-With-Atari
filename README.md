@@ -102,7 +102,7 @@ The DQN implementation includes:
 
 ## Group Contribution
 
-1. Madol Abraham Kuol Madol
+1. Madol Abraham Kuol Madol -  Implemented a comprehensive DQN training framework that systematically compares neural network architectures.
 2. Bernice Uwituze - Hyperparameter tuning on train.py to get best performing deep q-learning model
 3. Aubin Ntwali
 4. Valentine Tobechi Kalu
