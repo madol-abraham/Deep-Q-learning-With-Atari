@@ -99,3 +99,10 @@ The DQN implementation includes:
 - Training requires significant computational resources
 - Tensorboard logs are saved to `./dqn_tensorboard/`
 - Use Ctrl+C to stop training or playing early
+
+## Group Contribution
+
+1. Madol Abraham Kuol Madol
+2. Bernice Uwituze - Hyperparameter tuning on train.py to get best performing deep q-learning model
+3. Aubin Ntwali
+4. Valentine Tobechi Kalu
