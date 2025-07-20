@@ -68,7 +68,7 @@ Our experiments tested the following hyperparameters:
 | CnnPolicy, lr=2.5e-4, gamma=0.99, batch=32, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.1 | Higher learning rate accelerates training but may lead to less stable convergence |
 | CnnPolicy, lr=1e-4, gamma=0.995, batch=64, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.2 | Higher gamma values future rewards more, larger batch size provides more stable updates |
 
-## Key Findings
+## Findings
 
 1. **Policy Comparison**: CNN policies significantly outperform MLP policies for image-based Atari environments due to their ability to extract spatial features.
 
