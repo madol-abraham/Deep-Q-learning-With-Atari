@@ -81,7 +81,7 @@ def play_trained_agent(model_path="dqn_model.zip", num_episodes=5):
         if done:
             print("Episode ended.")
         
-        # Give a short break between episodes for better visualization
+    
         time.sleep(1) 
 
     # Close the Environment
