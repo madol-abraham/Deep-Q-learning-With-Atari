@@ -5,3 +5,4 @@ AutoROM[accept-rom-license]
 pandas
 opencv-python
 tensorboard
+torch
