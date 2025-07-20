@@ -105,5 +105,5 @@ The DQN implementation includes:
 
 1. Madol Abraham Kuol Madol -  Implemented a comprehensive DQN training framework that systematically compares neural network architectures.
 2. Bernice Uwituze - Hyperparameter tuning on train.py to get best performing deep q-learning model
-3. Aubin Ntwali
-4. Valentine Tobechi Kalu
+3. Aubin Ntwali - Created a script that loads the model and plays through episodes.
+4. Valentine Tobechi Kalu - Reconstructed the full trained agent pipeline, added results reporting and cleanup.
