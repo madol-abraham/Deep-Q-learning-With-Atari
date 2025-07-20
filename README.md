@@ -65,12 +65,13 @@ https://github.com/user-attachments/assets/72b0effa-3a1e-41f9-8400-4ac3adfad33a
 
 Our experiments tested the following hyperparameters:
 
-| Hyperparameter Set | Observed Behavior |
-|-------------------|-------------------|
-| MlpPolicy, lr=1e-4, gamma=0.99, batch=32, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.1 | MLP policy struggles with image-based input, resulting in poor performance |
-| CnnPolicy, lr=1e-4, gamma=0.99, batch=32, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.1 | CNN policy provides better feature extraction for images, establishing a baseline performance |
-| CnnPolicy, lr=2.5e-4, gamma=0.99, batch=32, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.1 | Higher learning rate accelerates training but may lead to less stable convergence |
-| CnnPolicy, lr=1e-4, gamma=0.995, batch=64, epsilon_start=1.0, epsilon_end=0.01, epsilon_decay=0.2 | Higher gamma values future rewards more, larger batch size provides more stable updates |
+| Hyperparameter Set                                                                 | Noted Behavior |
+|------------------------------------------------------------------------------------|----------------|
+| `lr=0.0001`, `gamma=0.99`, `batch=32`, `epsilon_start=1.0`, `epsilon_end=0.01`, `epsilon_decay=0.1` | Achieved an average reward of **1.0** which was a better performance compared to the CnnPolicy configs. However, the performance was poor suggesting minimal learning. The agent averaged **0.67 reward over 3 episodes**. |
+| `lr=0.0001`, `gamma=0.99`, `batch=32`, `epsilon_start=1.0`, `epsilon_end=0.02`, `epsilon_decay=0.995` | Achieved an average reward of **1.67 over 5 episodes** which is a slight improvement compared to the previous training. The agent mostly moved the paddle randomly and missed the ball quickly. The timesteps were increased from **25000 to 100000** for better training which took longer. |
+| `lr=0.0001`, `gamma=0.99`, `batch=32`, `epsilon_start=1.0`, `epsilon_end=0.05`, `epsilon_decay=0.9` | Achieved an average reward of **2.0** with training time of **1882.29s**. The agent mostly moved the paddle randomly and missed the ball quickly, although episode one had a reward of **4.0** with occasional breaking of bricks. |
+| `lr=0.00025`, `gamma=0.99`, `batch=32`, `epsilon_start=1.0`, `epsilon_end=0.01`, `epsilon_decay=0.1` | This was the best performing config which achieved a total reward of 7.0 over 5 episodes. The agent showed improvement in controlling the paddle, with better performance during the second episode. Training time was approximately **556.39s**, however there was still room for improvement to reach the best model |
+
 
 ## Findings
 
