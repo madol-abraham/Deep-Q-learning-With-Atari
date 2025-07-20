@@ -50,6 +50,10 @@ This will:
 - Play episodes with visualization
 - Display performance statistics
 
+## Demo
+
+https://github.com/user-attachments/assets/72b0effa-3a1e-41f9-8400-4ac3adfad33a
+
 ## Files
 
 - `train.py`: Main training script with hyperparameter tuning
